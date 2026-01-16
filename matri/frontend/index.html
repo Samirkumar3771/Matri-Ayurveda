@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maitri – Healthcare Based on Ayurveda</title>
+    <meta name="description"
+        content="Maitri is a modern Ayurveda healthcare website: treatments, doctors, wellness plans, and appointments.">
+    <link rel="stylesheet" href="styleindex.css">
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Font: Google + Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfKIlRrG2v5L7unvJQG5LbcQ1M8Z3C1h9GQ6jJ9iG6q7l0d7r8v+Q2Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+
+<body>
+    <!-- ====== NAV ====== -->
+    <header class="nav">
+        <div class="wrap">
+            <a href="#home" class="brand">
+                <div class="logo"><i class="fa-solid fa-leaf"></i></div>
+                <span>Maitri Ayurveda</span>
+                <div id="userDisplay" style="color: white; font-weight: bold;"></div>
+
+            </a>
+            <nav class="links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#treatments">Treatments</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#blog">Blog</a>
+                <a href="#appointment" class="cta">Book Now</a>
+                <button class="btn primary" onclick="logout()" style="margin-left:auto;">Logout</button>
+
+                
+
+
+
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="home">
+        <div class="wrap">
+            <div>
+                <div class="kicker" data-aos="fade-up" data-aos-delay="50">Traditional wisdom • Modern care</div>
+                <h1 data-aos="fade-up" data-aos-delay="120">Holistic healthcare based on <span
+                        style="color:var(--leaf-2)">Ayurveda</span></h1>
+                <p data-aos="fade-up" data-aos-delay="200">Personalised healing plans rooted in ancient science —
+                    supported by modern diagnostics. Restore balance through diet, lifestyle, herbs, and therapies.</p>
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="260">
+                    <a class="btn primary" href="#appointment"><i class="fa-regular fa-calendar-check"></i> Book an
+                        Appointment</a>
+                    <a class="btn" href="#services"><i class="fa-solid fa-spa"></i> Explore Services</a>
+                </div>
+            </div>
+
+            <div class="hero-img" aria-label="Ayurvedic therapy image">
+                <div class="floating-card">
+                    <i class="fa-solid fa-seedling"></i>
+                    <div>
+                        <strong>Dosha Quiz</strong><br>
+                        <small class="muted">Discover your Prakriti</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-head">
+                <h2>Why Maitri?</h2>
+                <p>We combine classical Ayurvedic principles (Dinacharya, Ritucharya, Ahara, Vihara) with
+                    evidence‑informed protocols. Our doctors spend time to understand your unique constitution and
+                    imbalances.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card" data-aos="zoom-in-up">
+                    <span class="badge">Personalised</span>
+                    <h3>Prakriti‑based Care</h3>
+                    <p>Assess Vata, Pitta, Kapha to tailor herbs, diet and therapies. No one‑size‑fits‑all.</p>
+                </div>
+                <div class="card" data-aos="zoom-in-up" data-aos-delay="100">
+                    <span class="badge">Safe</span>
+                    <h3>Herbal Formulations</h3>
+                    <p>Classical preparations, quality‑checked, with clear guidance and follow‑ups.</p>
+                </div>
+                <div class="card" data-aos="zoom-in-up" data-aos-delay="200">
+                    <span class="badge">Integrated</span>
+                    <h3>Modern Diagnostics</h3>
+                    <p>We use labs and imaging when needed to complement Ayurvedic assessment.</p>
+                </div>
+            </div>
+
+            <div class="sep"></div>
+            <div class="points" data-aos="fade-up">
+                <div class="pill"><i class="fa-regular fa-clock"></i> 45‑60 min first consult</div>
+                <div class="pill"><i class="fa-solid fa-leaf"></i> Diet & lifestyle roadmaps</div>
+                <div class="pill"><i class="fa-solid fa-hands-praying"></i> Guided therapies</div>
+                <div class="pill"><i class="fa-solid fa-user-nurse"></i> Ongoing support</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SERVICES ====== -->
+    <section id="services">
+        <div class="container">
+            <div class="section-head">
+                <h2>Services</h2>
+                <p>From prevention to recovery, choose a plan that meets your current state and goals.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card service-card" data-aos="fade-up">
+                    <div class="icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h3>Root‑Cause Consultations</h3>
+                    <p>In‑depth history, nadi pariksha, dosha/dhatu/agni assessment, and actionable plan.</p>
+                </div>
+                <div class="card service-card" data-aos="fade-up" data-aos-delay="120">
+                    <div class="icon"><i class="fa-solid fa-water"></i></div>
+                    <h3>Panchakarma</h3>
+                    <p>Detoxification and rejuvenation protocols guided by qualified physicians.</p>
+                </div>
+                <div class="card service-card" data-aos="fade-up" data-aos-delay="220">
+                    <div class="icon"><i class="fa-solid fa-bowl-food"></i></div>
+                    <h3>Diet & Lifestyle Coaching</h3>
+                    <p>Seasonal routines, mindful eating, and recipes aligned with your prakriti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TREATMENTS ====== -->
+    <section id="treatments">
+        <div class="container">
+            <div class="section-head">
+                <h2>Popular Treatments</h2>
+                <p>Therapies curated for stress, metabolism, pain, skin, and overall vitality.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card" data-aos="flip-left">
+                    <div class="treat-img"
+                        style="background-image:url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1600&auto=format&fit=crop')">
+                    </div>
+                    <h3>Abhyanga</h3>
+                    <p>Warm herbal oil massage that nourishes tissues, improves circulation, and calms the nervous
+                        system.</p>
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-delay="120">
+                    <div class="treat-img"
+                        style="background-image:url('https://images.unsplash.com/photo-1541675154750-0444c7d51e8e?q=80&w=1600&auto=format&fit=crop')">
+                    </div>
+                    <h3>Shirodhara</h3>
+                    <p>Steady stream of medicated oil on the forehead to ease anxiety, insomnia, and mental fatigue.</p>
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-delay="220">
+                    <div class="treat-img"
+                        style="background-image:url('https://images.unsplash.com/photo-1587017539504-67cfbddac569?q=80&w=1600&auto=format&fit=crop')">
+                    </div>
+                    <h3>Udvartana</h3>
+                    <p>Herbal powder massage to stimulate metabolism, reduce Kapha accumulation, and tone the skin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== DOCTORS ====== -->
+    <section id="doctors">
+        <div class="container">
+            <div class="section-head">
+                <h2>Our Doctors</h2>
+                <p>Experienced BAMS and MD (Ayurveda) practitioners dedicated to integrative, compassionate care.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card doc" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=800&auto=format&fit=crop"
+                        alt="Doctor 1">
+                    <div class="meta">
+                        <strong>Dr. Ananya Rao, BAMS</strong><br>
+                        <small>Women’s health • Lifestyle</small>
+                    </div>
+                </div>
+                <div class="card doc" data-aos="fade-up" data-aos-delay="120">
+                    <img src="https://images.unsplash.com/photo-1550831858-3c2581fed2f5?q=80&w=800&auto=format&fit=crop"
+                        alt="Doctor 2">
+                    <div class="meta">
+                        <strong>Dr. Rohan Kulkarni, MD (Ay)</strong><br>
+                        <small>Metabolism • Panchakarma</small>
+                    </div>
+                </div>
+                <div class="card doc" data-aos="fade-up" data-aos-delay="220">
+                    <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop"
+                        alt="Doctor 3">
+                    <div class="meta">
+                        <strong>Dr. Meera Shah, BAMS</strong><br>
+                        <small>Mental wellbeing • Skin</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TESTIMONIALS ====== -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-head">
+                <h2>What Patients Say</h2>
+                <p>Real experiences from our community.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card testi" data-aos="zoom-in">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <p>Within two months my sleep improved and stress reduced dramatically. Gentle, effective care!
+                        </p>
+                        <small>— Kavya S.</small>
+                    </div>
+                </div>
+                <div class="card testi" data-aos="zoom-in" data-aos-delay="140">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <p>Panchakarma was professionally supervised. I felt lighter, clearer, and energized.</p>
+                        <small>— Aditya M.</small>
+                    </div>
+                </div>
+                <div class="card testi" data-aos="zoom-in" data-aos-delay="240">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <p>Diet plan aligned perfectly with my routine. Sustainable and delicious!</p>
+                        <small>— Ritu P.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== BLOG ====== -->
+    <section id="blog">
+        <div class="container">
+            <div class="section-head">
+                <h2>Ayurveda Resources</h2>
+                <p>Learn the principles that keep you balanced across seasons.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card" data-aos="fade-up">
+                    <div class="blog-img"
+                        style="background-image:url('https://images.unsplash.com/photo-1516714435132-71a1e6e465f3?q=80&w=1600&auto=format&fit=crop')">
+                    </div>
+                    <h3>Understanding Doshas</h3>
+                    <p>Quick guide to Vata, Pitta, Kapha and how to spot imbalances.</p>
+                    <a class="btn" href="#" onclick="alert('Coming soon!')">Read</a>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="120">
+                    <div class="blog-img"
+                        style="background-image:url('https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1600&auto=format&fit=crop')">
+                    </div>
+                    <h3>Daily Routine (Dinacharya)</h3>
+                    <p>Small practices to anchor your day: tongue scraping, abhyanga, and more.</p>
+                    <a class="btn" href="#" onclick="alert('Coming soon!')">Read</a>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="220">
+                    <div class="blog-img"
+                        style="background-image:url('https://images.unsplash.com/photo-1514995669114-b7d53f40a63c?q=80&w=1600&auto=format&fit=crop')">
+                    </div>
+                    <h3>Seasonal Eating (Ritucharya)</h3>
+                    <p>Adjust your plate with the weather to keep agni steady.</p>
+                    <a class="btn" href="#" onclick="alert('Coming soon!')">Read</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== APPOINTMENT ====== -->
+    <section id="appointment">
+        <div class="container">
+            <div class="section-head">
+                <h2>Book an Appointment</h2>
+                <p>Tell us a little about yourself. We’ll confirm your slot over email/SMS.</p>
+            </div>
+            <form class="card form" onsubmit="return handleBooking(event)">
+                <div class="full">
+                    <label class="note">Your details</label>
+                </div>
+                <div>
+                    <input type="text" id="name" placeholder="Full name" required>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="tel" id="phone" placeholder="Phone" pattern="[0-9+\-() ]{7,}" required>
+                </div>
+                <div>
+                    <select id="service" required>
+                        <option value="">Select service</option>
+                        <option>Root‑Cause Consultation</option>
+                        <option>Panchakarma</option>
+                        <option>Diet & Lifestyle Coaching</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="date" id="date" required>
+                </div>
+                <div>
+                    <input type="time" id="time" required>
+                </div>
+                <div class="full">
+                    <textarea id="message" rows="4" placeholder="Share concerns or goals (optional)"></textarea>
+                </div>
+                <div class="full">
+                    <button class="btn primary" type="submit"><i class="fa-regular fa-paper-plane"></i> Submit</button>
+
+                </div>
+                <div class="full note" id="result" aria-live="polite"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot">
+            <div class="brand">
+                <div class="logo"><i class="fa-solid fa-leaf"></i></div><span>Maitri Ayurveda</span>
+            </div>
+            <div>© <span id="year"></span> Maitri Health • Based on Ayurveda</div>
+            <div>
+                <a href="#" class="pill"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#" class="pill"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#" class="pill"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-BfHk9X8g1H4wQz8I3z2d3f5lXvH4lFlW7uVt3v9R1zY7qS6kK1Gz8l8g1w0V2a6f0k9b+7qv+9q6tO5x6yqvGQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
